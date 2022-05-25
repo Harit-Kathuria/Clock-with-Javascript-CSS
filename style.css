@@ -1,0 +1,68 @@
+html{
+	background-image: url("scenry.jpg");
+	color: black;
+	font-family: "Times New Roman";
+	text-align: center;
+	font-size: 15px;
+}
+body{
+	margin: 2px;
+	min-height:50%;
+	display: flex;
+	flex: 1;
+	align-items: center;
+}
+.clock{
+	width: 35rem;
+	height:35rem;
+	border:2rem solid yellow;
+	border-radius: 50%;
+	position: relative;
+	margin: 50px auto;
+	padding: 5px;
+	box-shadow: 
+		0 0 0 4px rgba(0,0,0,0.1),
+		inset 0 0 0 3px #EFEFEF,
+		inset 0 0 10px black,
+		0 0 10px rgba(0,0,0,0.2);
+}
+.clock-face{
+	position: relative;
+	background: url("file:///D:/project/clock/My%20project.png");
+	height: 101%;
+	width: 100%;
+	transform: translateY(-3px);
+}
+.hand{
+	height:3px;
+	width:50%;
+	background: black;
+	position:absolute;
+	top: 50%;
+	transform-origin:100%;
+	transform: rotate(90deg);
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.mhand{
+	height:5px;
+	width:50%;
+	background: grey;
+	position:absolute;
+	top: 50%;
+	transform-origin:100%;
+	transform: rotate(90deg);
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hhand{
+	height:7px;
+	width:50%;
+	background: brown;
+	position:absolute;
+	top: 50%;
+	transform-origin:100%;
+	transform: rotate(90deg);
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
